@@ -1,0 +1,24 @@
+tunnel: e8aa11a4-c266-4799-86a2-6ea01103e91e
+credentials-file: C:\Users\nlaoh\.cloudflared\e8aa11a4-c266-4799-86a2-6ea01103e91e.json
+
+ingress:
+  # Agent
+  - hostname: agent-piot.natchanonlaoharawee.me
+    service: http://localhost:5002
+  # Master
+  - hostname: master-piot.natchanonlaoharawee.me
+    service: http://localhost:5001
+  # Rooms
+  - hostname: room1-piot.natchanonlaoharawee.me
+    service: http://localhost:4001
+  - hostname: room2-piot.natchanonlaoharawee.me
+    service: http://localhost:4002
+  - hostname: room3-piot.natchanonlaoharawee.me
+    service: http://localhost:4003
+  - hostname: room4-piot.natchanonlaoharawee.me
+    service: http://localhost:4004
+  - hostname: room5-piot.natchanonlaoharawee.me
+    service: http://localhost:4005 
+  - service: http_status:404
+
+protocol: http2
